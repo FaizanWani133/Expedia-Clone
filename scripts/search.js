@@ -30,7 +30,7 @@ async function getFlights(from, to) {
     ).innerHTML = `<img id="waiting-img"  src="https://cdn.dribbble.com/users/72535/screenshots/4291412/tripactions-flight-search-loader-by-jardson-almeida.gif">`;
 
     const res = await fetch(
-      `http://localhost:3000/flights?from=${from}&to=${to}`
+      `https://expedia-server.onrender.com/Flights?from=${from}&to=${to}`
     );
 
     const res2 = await res.json();
